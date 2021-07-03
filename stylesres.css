@@ -8,6 +8,7 @@
     --dark: #28364f;
     --secondary: #2bcc33;
     --secondarylight: #b0ebb3;
+    --lighthover: #c4cee0;
     --transition: all .3s ease 0s;
 }
 
@@ -104,6 +105,6 @@
 }
 
 .bulliten .element:hover, .bulliten ul:hover {
-    background-color: var(--lighter);
+    background-color: var(--lighthover);
     transition: var(--transition);
 }
