@@ -22,7 +22,7 @@
     left: 0;
     right: 0;
     position: fixed;
-    background-color: var(--accent);
+    background-color: azure;
     overflow: hidden;
     transition: var(--transition);
 }
@@ -30,7 +30,7 @@
 .name {
     font-family: "poppins", sans-serif;
     text-decoration: none;
-    color: azure;
+    color: black;
     padding: 14px 8px;
 }
 
@@ -38,7 +38,7 @@
     vertical-align: middle;
     font-family: "poppins", sans-serif;
     text-decoration: none;
-    color: azure;
+    color:black;
     padding: 8px 8px;
     font-size: large;
     font-weight: 600;
