@@ -8,7 +8,7 @@
     --dark: #28364f;
     --secondary: #2bcc33;
     --secondarylight: #b0ebb3;
-    --transition: all 0.3s ease 0s;
+    --transition: all .3s ease 0s;
 }
 
 * {
@@ -22,9 +22,10 @@
     left: 0;
     right: 0;
     position: fixed;
-    background-color: azure;
+    background-color: var(--lighter);
     overflow: hidden;
     transition: var(--transition);
+    border-style: none none solid none;
 }
 
 .name {
@@ -39,7 +40,7 @@
     font-family: "poppins", sans-serif;
     text-decoration: none;
     color:black;
-    padding: 8px 8px;
+    margin: 8px 8px;
     font-size: large;
     font-weight: 600;
     transition: var(--transition);
@@ -51,12 +52,15 @@
 }
 
 .topnavbar a:hover{
-    background-color: var(--secondary)
+    border-radius: 25px;
+    background-color: var(--light);
+    padding: 0px 10px 0px 10px;
 }
 
 .resume {
     padding-top: 90px;
     padding-left: 0px;
+    padding-bottom: 10px;
 }
 
 .resume{
@@ -74,8 +78,12 @@
 }
 
 .bulliten{
-    padding-left: 10px;
+    width: 100%;
     display: list-item;
+}
+
+.bulliten .element, .bulliten ul{
+    padding-left: 10px;
 }
 
 .bulliten li{
@@ -85,7 +93,7 @@
     padding-top: 12px;
 }
 
-.bulliten .a {
+.bulliten .secli {
     list-style-type: circle;
     list-style-position: inside;
 }
@@ -95,7 +103,7 @@
     font-weight: 600;
 }
 
-.bulliten .element:hover, .bulliten li:hover {
+.bulliten .element:hover, .bulliten ul:hover {
     background-color: var(--lighter);
     transition: var(--transition);
 }
