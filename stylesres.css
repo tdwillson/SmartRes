@@ -55,6 +55,7 @@
 .topnavbar a:hover{
     border-radius: 25px;
     background-color: var(--light);
+    padding: 0px 12px 0px 12px;
 }
 
 .resume {
