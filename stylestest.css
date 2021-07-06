@@ -8,27 +8,35 @@
     --secondarylight: #b0ebb3;
     --lighthover: #c4cee0;
     --transition: all .3s ease 0s;
+    --new: #8542e3;
+    --newhover: #592e96;
 }
 
 * {
     box-sizing: border-box;
 }
+ 
+div.sectionsscroll {
+    overflow: auto;
+    white-space: nowrap;
+}
 
-[class*="col-"] {
-    float: left;
-    padding: 15px;
-  }
+div.sectionsscroll a {
+    background-color: var(--new);
+    display:inline-flex;
+    color: white;
+    text-align: center;
+    font-size: large;
+    align-items: stretch;
+    text-decoration: none;
+    white-space: pre-wrap; /* css-3 */
+    word-wrap: break-word;
+    max-width: 120px;
+    transition: var(--transition);
+    padding: 10px 10px 10px 10px;
+    border-radius:10px;
+}
 
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
+div.sectionsscroll a:hover {
+    background-color: var(--newhover);
+}
